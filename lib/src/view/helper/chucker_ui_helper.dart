@@ -126,6 +126,12 @@ ChuckerFlutter: You programmatically vetoed notification behavior. Make sure to 
       ),
     );
   }
+
+  ///[deleteAllLogs] delete all recorded api from disk
+  static Future<void> deleteAllLogs()async{
+    final sharedPreferencesManager = SharedPreferencesManager.getInstance();
+    await sharedPreferencesManager.deleteAllApi();
+  }
 }
 
 ///[ChuckerFlutter] is a helper class to initialize the library
@@ -155,4 +161,7 @@ class ChuckerFlutter {
 
   ///[showChuckerScreen] navigates to the chucker home screen
   static void showChuckerScreen() => ChuckerUiHelper.showChuckerScreen();
+
+  ///[clearLogs] delete all saved logs
+  static void clearLogs() => ChuckerUiHelper.deleteAllLogs();
 }

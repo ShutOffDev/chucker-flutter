@@ -126,7 +126,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 child: Slider.adaptive(
                   min: 1,
                   max: 100,
-                  divisions: 90,
+                  divisions: 1,
                   activeColor: primaryColor,
                   label: _settings.apiThresholds.toString(),
                   value: _settings.apiThresholds.toDouble(),

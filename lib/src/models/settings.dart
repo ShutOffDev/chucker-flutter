@@ -47,7 +47,7 @@ class Settings {
   factory Settings.defaultObject() => Settings(
         duration: const Duration(seconds: 2),
         notificationAlignment: Alignment.bottomCenter,
-        apiThresholds: 5,
+        apiThresholds: 0,
         httpMethod: HttpMethod.none,
         showNotification: true,
         showDeleteConfirmDialog: true,

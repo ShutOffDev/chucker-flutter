@@ -81,6 +81,13 @@ class SharedPreferencesManager {
     );
   }
 
+  ///[deleteAllApi] deletes all api record from local disk
+  Future<void> deleteAllApi() async {
+    final preferences = await SharedPreferences.getInstance();
+
+    await preferences.setString(_kApiResponses, '');
+  }
+
   ///[deleteAnApi] deletes an api record from local disk
   Future<void> deleteSelected(List<String> dateTimes) async {
     final apis = await getAllApiResponses();
