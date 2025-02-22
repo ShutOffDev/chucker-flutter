@@ -125,7 +125,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 importantInfo: Localization.strings['apiSettingsImpInfo'],
                 child: Slider.adaptive(
                   min: 1,
-                  max: 1000,
+                  max: 100,
                   divisions: 90,
                   activeColor: primaryColor,
                   label: _settings.apiThresholds.toString(),
