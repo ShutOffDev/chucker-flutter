@@ -85,7 +85,7 @@ class SharedPreferencesManager {
   Future<void> deleteAllApi() async {
     final preferences = await SharedPreferences.getInstance();
 
-    await preferences.setString(_kApiResponses, '');
+    await preferences.setString(_kApiResponses, jsonEncode(''));
   }
 
   ///[deleteAnApi] deletes an api record from local disk
