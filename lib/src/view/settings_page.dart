@@ -124,7 +124,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 description: Localization.strings['apiSettingDesc']!,
                 importantInfo: Localization.strings['apiSettingsImpInfo'],
                 child: Slider.adaptive(
-                  min: 100,
+                  min: 1,
                   max: 1000,
                   divisions: 90,
                   activeColor: primaryColor,
